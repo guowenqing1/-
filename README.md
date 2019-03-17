@@ -1,5 +1,5 @@
 # mall
-商品街
+商品街是一个购物商城平台
 
 # 搭建运行环境
 npm install || yarn
