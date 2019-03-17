@@ -7,8 +7,11 @@
    */
 
   module.exports = {
-    baseUrl:'./',
-    // publicPath:'./',
+    // 被抛弃的 baseUrl
+    // baseUrl:'./',
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/production-sub-path/'
+    : '/',
     configureWebpack: {
       resolve: {
         alias: {
